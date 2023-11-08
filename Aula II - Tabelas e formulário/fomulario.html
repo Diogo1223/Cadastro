@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slyle.css">
+    <title>Fomulário</title>
+</head>
+<body>
+    <!--Fazer cadastro-->
+    <h2 align= "Center">Cadastrdo Paciente</h2>
+    <form action="" method="post"> 
+    
+    <label for="">Nome:</label>
+    <input type="text" placeholder="Digite seu Nome" required> 
+
+    <label for="">Sobreome:</label>
+    <input type="text" placeholder="Digite seu Sobrenome" required>
+
+    <label for="" >Endereço</label>
+    <input type="text" placeholder="Digite seu Endereço" required><br><br>
+
+    <!--Fazer caixas de marcar-->
+    <label for=""> Exames:</label><br>
+    <input type="checkbox" name="exames" value="sangue">Sangue
+    <input type="checkbox" name="exames" value="urina">Urina
+    <input type="checkbox" name="exames" value="ergonometria">Ergonometria
+    <input type="checkbox" name="exames" value="fezes">Fezes
+    <input type="checkbox" name="exames" value="cardiaco">Cardiaco
+    <input type="checkbox" name="exames" value="prostata">Próstata
+    <input type="checkbox" name="exames" value="oftalmologia">Oftalmologia<br><br>
+
+    <!--Botão circular-->
+    <label for="">Sexo</label> <br>
+    <input type="radio" name="sexo" value="M">Masculino <br>
+    <input type="radio" name="sexo" value="F">Feminino <br>
+
+
+    <!--Fazer seletor-->
+    <label for="">Clínica</label>
+    <select name="clinica" id="">clinica
+    <option value="0">Selecione uma opção</option>
+    <option value="hapivida">Hapivida</option>
+    <option value="unimed">Unimed</option>
+    <option value="capes">Capes</option>
+    
+</select>
+<br><br>
+<label for="">Observações</label><br><br>
+<textarea name="Observacao" id="obs" cols="40" rows="8"></textarea> <br>
+
+<!--Deixa as coisas invisives-->
+<!--<label for="">A informação ta invisivel</label>
+<input type="hidden" name="estado" value="SE">-->
+
+<!--Criar botão-->
+<button type="submit">Enviar</button>
+<button type="reset">Resetar</button>
+
+</form>
+</body>
+</html>
